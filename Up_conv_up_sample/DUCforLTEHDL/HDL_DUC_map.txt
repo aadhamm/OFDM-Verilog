@@ -1,0 +1,61 @@
+HDL_DUC_tc --> HDL_DUC_tc
+DUCforLTEHDL/HDL_DUC/Gain Correction --> Gain_Correction
+DUCforLTEHDL/HDL_DUC/Mixer --> Mixer
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter1/FirRdyLogic --> FirRdyLogic
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter1/Addressable Delay Line/SimpleDualPortRAM_generic --> SimpleDualPortRAM_generic
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter1/FilterTapSystolic --> FilterTapSystolic
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter1/FilterTapSystolic --> FilterTapSystolic_block
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter1 --> FIRFilter1
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter2/FirRdyLogic --> FirRdyLogic_block
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter2/Addressable Delay Line --> Addressable_Delay_Line_block1
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter2/FilterTapSystolic --> FilterTapSystolic_block1
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter2/Addressable Delay Line --> Addressable_Delay_Line_block2
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter2/FilterTapSystolic --> FilterTapSystolic_block2
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator/FIRFilter2 --> FIRFilter2
+DUCforLTEHDL/HDL_DUC/CIC Compensation Interpolator --> CIC_Compensation_Interpolator
+DUCforLTEHDL/HDL_DUC/CICInterpolator/rdySection --> rdySection
+DUCforLTEHDL/HDL_DUC/CICInterpolator/cSection --> cSection
+DUCforLTEHDL/HDL_DUC/CICInterpolator/usSection --> usSection
+DUCforLTEHDL/HDL_DUC/CICInterpolator/iSection --> iSection
+DUCforLTEHDL/HDL_DUC/CICInterpolator/gcSection --> gcSection
+DUCforLTEHDL/HDL_DUC/CICInterpolator/castSection --> castSection
+DUCforLTEHDL/HDL_DUC/CICInterpolator --> CICInterpolator
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator/DUCforLTEHDL/HDL_DUC/Halfband Interpolator/FIRFilter1/FirRdyLogic --> FirRdyLogic_block1
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator/DUCforLTEHDL/HDL_DUC/Halfband Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block3
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator/DUCforLTEHDL/HDL_DUC/Halfband Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block4
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator/DUCforLTEHDL/HDL_DUC/Halfband Interpolator/FIRFilter1/FilterTapSystolicPreAdd --> FilterTapSystolicPreAdd
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator/DUCforLTEHDL/HDL_DUC/Halfband Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block5
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator/DUCforLTEHDL/HDL_DUC/Halfband Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block6
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator/DUCforLTEHDL/HDL_DUC/Halfband Interpolator/FIRFilter1/FilterTapSystolicPreAdd --> FilterTapSystolicPreAdd_block
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator/DUCforLTEHDL/HDL_DUC/Halfband Interpolator/FIRFilter1 --> FIRFilter1_block
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator/DUCforLTEHDL/HDL_DUC/Halfband Interpolator/FIRFilter2/FirRdyLogic --> FirRdyLogic_block2
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator/DUCforLTEHDL/HDL_DUC/Halfband Interpolator/FIRFilter2/Addressable Delay Line --> Addressable_Delay_Line_block7
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator/DUCforLTEHDL/HDL_DUC/Halfband Interpolator/FIRFilter2/Addressable Delay Line --> Addressable_Delay_Line_block8
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator/DUCforLTEHDL/HDL_DUC/Halfband Interpolator/FIRFilter2 --> FIRFilter2_block
+DUCforLTEHDL/HDL_DUC/Halfband Interpolator --> Halfband_Interpolator
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter1/FirRdyLogic --> FirRdyLogic_block3
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block9
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block10
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block11
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block12
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter1/FilterTapSystolicPreAdd --> FilterTapSystolicPreAdd_block1
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block13
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block14
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block15
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter1/Addressable Delay Line --> Addressable_Delay_Line_block16
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter1/FilterTapSystolicPreAdd --> FilterTapSystolicPreAdd_block2
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter1 --> FIRFilter1_block1
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter2/FirRdyLogic --> FirRdyLogic_block4
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter2/Addressable Delay Line --> Addressable_Delay_Line_block17
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter2/FilterTapSystolic --> FilterTapSystolic_block3
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter2/Addressable Delay Line --> Addressable_Delay_Line_block18
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter2/FilterTapSystolic --> FilterTapSystolic_block4
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/DUCforLTEHDL/HDL_DUC/Lowpass Interpolator/FIRFilter2 --> FIRFilter2_block1
+DUCforLTEHDL/HDL_DUC/Lowpass Interpolator --> Lowpass_Interpolator
+DUCforLTEHDL/HDL_DUC/NCO/DitherGen --> DitherGen
+DUCforLTEHDL/HDL_DUC/NCO/WaveformGen/LookUpTableGen --> LookUpTableGen
+DUCforLTEHDL/HDL_DUC/NCO/WaveformGen --> WaveformGen
+DUCforLTEHDL/HDL_DUC/NCO --> NCO
+DUCforLTEHDL/HDL_DUC --> HDL_DUC

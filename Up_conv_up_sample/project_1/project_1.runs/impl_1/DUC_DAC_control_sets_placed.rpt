@@ -1,0 +1,162 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu May 25 19:12:42 2023
+| Host         : LAPTOP-PUJFFC9O running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file DUC_DAC_control_sets_placed.rpt
+| Design       : DUC_DAC
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    84 |
+|    Minimum number of control sets                        |    84 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   164 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    84 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    74 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |              64 |           23 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |            1353 |          256 |
+| Yes          | No                    | Yes                    |            4552 |         1032 |
+| Yes          | Yes                   | No                     |               1 |            1 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------+------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------------+----------------+
+|         Clock Signal        |                                                Enable Signal                                               |                                    Set/Reset Signal                                   | Slice Load Count | Bel Load Count |
++-----------------------------+------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------------+----------------+
+|  Div_by_two11/out_clk_reg_0 |                                                                                                            |                                                                                       |                1 |              1 |
+|  clk_out_2_048_MHz_BUFG     | ce_out_0_OBUF                                                                                              | HDL_DUC1/u_Halfband_Interpolator/u_filterInstantiation_1/coeffTableRegP0_1[7]_i_1_n_0 |                1 |              1 |
+|  clk_wiz_inst/inst/clk_out1 |                                                                                                            |                                                                                       |                1 |              1 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_firRdyLogic/E[0]                                   | rst_IBUF                                                                              |                1 |              4 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_firRdyLogic/firRdy_count                           | rst_IBUF                                                                              |                1 |              4 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_firRdyLogic/sharingCount_1_reg[2][0]               | rst_IBUF                                                                              |                1 |              4 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_firRdyLogic/E[0]                                 | rst_IBUF                                                                              |                1 |              4 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_firRdyLogic/firRdy_count                         | rst_IBUF                                                                              |                1 |              4 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Halfband_Interpolator/u_filterInstantiation_1/u_firRdyLogic/E[0]                                | rst_IBUF                                                                              |                2 |              5 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_firRdyLogic/sharingCount_1_reg[2][0]             | rst_IBUF                                                                              |                3 |              8 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine7/E[0]                                    | rst_IBUF                                                                              |               11 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine5/E[0]                                    | rst_IBUF                                                                              |                6 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine4/E[0]                                    | rst_IBUF                                                                              |                8 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine3/E[0]                                    | rst_IBUF                                                                              |                5 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine2/E[0]                                    | rst_IBUF                                                                              |                5 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine1/E[0]                                    | rst_IBUF                                                                              |                6 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine0/E[0]                                    | rst_IBUF                                                                              |                9 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine4/E[0]                                  | rst_IBUF                                                                              |                7 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine6/E[0]                                    | rst_IBUF                                                                              |                8 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine3/E[0]                                  | rst_IBUF                                                                              |                9 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine2/E[0]                                  | rst_IBUF                                                                              |                6 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine1/E[0]                                  | rst_IBUF                                                                              |               11 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine0/E[0]                                  | rst_IBUF                                                                              |                7 |             32 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/dout_im_10                                           | rst_IBUF                                                                              |                6 |             34 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/E[0]                                                 | rst_IBUF                                                                              |                6 |             34 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/FIROutputCastDB1_re                                                        | rst_IBUF                                                                              |                5 |             34 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/dout_im_10                                         | rst_IBUF                                                                              |                9 |             34 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Halfband_Interpolator/u_filterInstantiation/u_firRdyLogic/firRdy_xdinVld                        | rst_IBUF                                                                              |               21 |             35 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Halfband_Interpolator/u_filterInstantiation_1/u_firRdyLogic/firRdy_xdinVld                      | rst_IBUF                                                                              |               26 |             35 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Halfband_Interpolator/u_filterInstantiation/E[0]                                                | rst_IBUF                                                                              |                5 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Interpolator_inst/u_cSection/cDelay_re1                                                     | rst_IBUF                                                                              |                9 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation/dout_im_10                                  | rst_IBUF                                                                              |                9 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation/u_delayLine2/E[0]                           | rst_IBUF                                                                              |                9 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation/u_delayLine1/E[0]                           | rst_IBUF                                                                              |                8 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation/u_delayLine0/E[0]                           | rst_IBUF                                                                              |                7 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation_1/u_delayLine2/E[0]                         | rst_IBUF                                                                              |                7 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation/E[0]                                        | rst_IBUF                                                                              |                7 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation_1/u_delayLine0/E[0]                         | rst_IBUF                                                                              |                7 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation_1/u_delayLine1/E[0]                         | rst_IBUF                                                                              |                7 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation_1/dout_im_10                                | rst_IBUF                                                                              |                6 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation_1/E[0]                                      | rst_IBUF                                                                              |                7 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Halfband_Interpolator/u_filterInstantiation_1/u_delayLine0/E[0]                                 | rst_IBUF                                                                              |                6 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Halfband_Interpolator/FIROutputCastDB1_re                                                       | rst_IBUF                                                                              |                7 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Halfband_Interpolator/u_filterInstantiation_1/dout_im_10                                        | rst_IBUF                                                                              |                5 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Halfband_Interpolator/u_filterInstantiation/gainOutSwitch_10                                    | rst_IBUF                                                                              |                5 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Halfband_Interpolator/u_filterInstantiation/dout_im_10                                          | rst_IBUF                                                                              |                7 |             36 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation_1/u_firRdyLogic/firRdy_xdinVld              | rst_IBUF                                                                              |               27 |             37 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation/u_firRdyLogic/firRdy_xdinVld                | rst_IBUF                                                                              |               21 |             37 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Interpolator_inst/u_cSection/cDelay_re2                                                     | rst_IBUF                                                                              |                8 |             38 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Interpolator_inst/u_usSection/upSampler_dataOutReg_re                                       | rst_IBUF                                                                              |                6 |             40 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Interpolator_inst/u_cSection/cDelay_re3                                                     | rst_IBUF                                                                              |                7 |             40 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine4_1/u_simpleDualPortRam/p_0_in            |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation_1/u_delayLine3_1/u_simpleDualPortRam/p_0_in |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Halfband_Interpolator/u_filterInstantiation/u_firRdyLogic/p_0_in                                |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Halfband_Interpolator/u_filterInstantiation_1/u_firRdyLogic/p_0_in                              |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation_1/u_firRdyLogic/p_0_in                      |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Halfband_Interpolator/u_filterInstantiation_1/u_delayLine1_1/u_simpleDualPortRam/p_0_in         |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation_1/u_delayLine2_1/u_simpleDualPortRam/p_0_in |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation_1/u_delayLine1_1/u_simpleDualPortRam/p_0_in |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine1_1/u_simpleDualPortRam/p_0_in            |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine2_1/u_simpleDualPortRam/p_0_in            |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine3_1/u_simpleDualPortRam/p_0_in            |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation/u_firRdyLogic/p_0_in                        |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation/u_delayLine3_1/u_simpleDualPortRam/p_0_in   |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_firRdyLogic/p_0_in                               |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation/u_delayLine1_1/u_simpleDualPortRam/p_0_in   |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Compensation_Interpolator/u_filterInstantiation/u_delayLine2_1/u_simpleDualPortRam/p_0_in   |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_firRdyLogic/p_0_in                                 |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine8_1/u_simpleDualPortRam/p_0_in            |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine7_1/u_simpleDualPortRam/p_0_in            |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine6_1/u_simpleDualPortRam/p_0_in            |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation/u_delayLine5_1/u_simpleDualPortRam/p_0_in            |                                                                                       |                6 |             48 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine6/E[0]                                  | rst_IBUF                                                                              |               10 |             64 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine8/E[0]                                  | rst_IBUF                                                                              |               13 |             64 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine7/E[0]                                  | rst_IBUF                                                                              |               13 |             64 |
+|  clk_out_2_048_MHz_BUFG     |                                                                                                            | rst_IBUF                                                                              |               23 |             64 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine9_1/u_simpleDualPortRam/p_0_in          |                                                                                       |               12 |             96 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine7_1/u_simpleDualPortRam/p_0_in          |                                                                                       |               12 |             96 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine6_1/u_simpleDualPortRam/p_0_in          |                                                                                       |               12 |             96 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine8_1/u_simpleDualPortRam/p_0_in          |                                                                                       |               12 |             96 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_CIC_Interpolator_inst/u_usSection/E[0]                                                          | rst_IBUF                                                                              |               30 |            120 |
+|  clk_out_2_048_MHz_BUFG     | HDL_DUC1/u_Lowpass_Interpolator/u_filterInstantiation_1/u_delayLine5_1/E[0]                                | rst_IBUF                                                                              |               79 |            352 |
+|  clk_out_2_048_MHz_BUFG     | ce_out_0_OBUF                                                                                              |                                                                                       |              256 |           1468 |
+|  clk_out_2_048_MHz_BUFG     | ce_out_0_OBUF                                                                                              | rst_IBUF                                                                              |              519 |           2429 |
++-----------------------------+------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+------------------+----------------+
+
+

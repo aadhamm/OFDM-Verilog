@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="https://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<title>HDL Check Report for 'whdlOFDMTx'</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<script type="text/javascript" src="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/jquery-1.7.1.js"></script>
+<script type="text/javascript" src="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/docscripts.js"></script>
+        
+        <link href="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/ice_960.css" rel="stylesheet" type="text/css">
+        <link href="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/HDLsite5.css" rel="stylesheet" type="text/css">
+        <link href="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center.css" rel="stylesheet" type="text/css">
+        <link href="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center_installed.css" rel="stylesheet" type="text/css">
+        <link href="file://C:/Program%20Files/MATLAB/R2022b/toolbox/hdlcoder/hdlcommon/js_css/ice_doc_center_print.css" rel="stylesheet" type="text/css" media="print">
+        <script type="text/javascript">
+            if (navigator.appName != "ICEbrowser") {
+            var cssStyleSheets = $("link").filter(function(){
+            var href = $(this).attr('href');
+            return href.indexOf("ice_doc_center_print.css") == -1});
+            var hrefElements = $.map(cssStyleSheets, function(elem) {
+            var href = $(elem).attr('href');
+            var hrefArray = href.split("/");
+            hrefArray[hrefArray.length - 1] = hrefArray[hrefArray.length - 1].replace("ice_", "");
+            return {
+            href: hrefArray.join("/"),
+            media: $(elem).attr('media')
+            };
+            });
+            cssStyleSheets.remove();
+            for (var i = 0; i < hrefElements.length; i++) {
+            if ($.browser.msie && $.browser.version <= 8) {
+            document.createStyleSheet(hrefElements[i].href);
+            } else {
+            var link = $('<link rel="stylesheet" href=' + hrefElements[i].href + ' type="text/css" />');
+            if (hrefElements[i].media) {
+            link.attr('media', hrefElements[i].media);
+            }
+            $('head').append(link);
+            }
+            }
+            }
+    </script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div class="container_192">
+<div class="grid_192">
+ <div class="page_container"><div class="content_frame">
+<h1>HDL Code Generation Check Report for 'whdlOFDMTx'
+<a href="matlab:open_system('whdlOFDMTx');">open model 'whdlOFDMTx'</a><BR>
+Generated on 2023-05-02 12:36:38</h1>
+<H2>HDL check for 'whdlOFDMTx' complete with 0 errors, 0 warnings, and 9 messages.</H2><BR>
+<H3>The following table describes blocks for which errors, warnings or messages were reported.</H3><BR>
+<TABLE>
+<TR><TD> <B>Simulink Blocks and resources</B> </TD><TD> <B>Level</B> </TD><TD> <B>Description</B> </TD></TR><TR bgcolor="#F0F0F0"><TD>
+<a alt="dsp:hdl:Upsample:validateBlock:icnotused" href="matlab:hilite(get_param(char([119 104 100 108 79 70 68 77 84 114 97 110 115 109 105 116 116 101 114 95 117 112 95 99 111 110]),'object'),'none');hilite_system(char([119 104 100 108 79 70 68 77 84 120 47 70 114 97 109 101 32 71 101 110 101 114 97 116 111 114 47 68 97 116 97 47 68 97 116 97 32 67 104 97 105 110 47 85 112 115 97 109 112 108 101 49]))">whdlOFDMTx/Frame Generator/Data/Data Chain/Upsample1</a>
+</TD>
+<TD>Message</TD>
+<TD>The initial condition is not used when the model is in single-tasking mode. Multi-tasking mode is not supported for HDL.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="hdlcoder:validate:nonvirtualBus" href="matlab:hilite(get_param(char([119 104 100 108 79 70 68 77 84 114 97 110 115 109 105 116 116 101 114 95 117 112 95 99 111 110]),'object'),'none');hilite_system(char([119 104 100 108 79 70 68 77 84 120 47 70 114 97 109 101 32 71 101 110 101 114 97 116 111 114 47 68 97 116 97 47 68 97 116 97 32 67 104 97 105 110 47 67 114 101 97 116 101 32 67 111 110 116 114 111 108 32 66 117 115 47 83 97 109 112 108 101 32 67 111 110 116 114 111 108 10 66 117 115 32 67 114 101 97 116 111 114 47 66 117 115 32 67 114 101 97 116 111 114]))">whdlOFDMTx/Frame Generator/Data/Data Chain/Create Control Bus/Sample Control
+Bus Creator/Bus Creator</a>
+</TD>
+<TD>Message</TD>
+<TD>The non-virtual bus setting is ignored for HDL code generation. The bus will be implemented as a set of independent elements.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="hdlcoder:validate:nonvirtualBus" href="matlab:hilite(get_param(char([119 104 100 108 79 70 68 77 84 114 97 110 115 109 105 116 116 101 114 95 117 112 95 99 111 110]),'object'),'none');hilite_system(char([119 104 100 108 79 70 68 77 84 120 47 70 114 97 109 101 32 71 101 110 101 114 97 116 111 114 47 72 101 97 100 101 114 47 67 114 101 97 116 101 32 67 111 110 116 114 111 108 32 66 117 115 47 83 97 109 112 108 101 32 67 111 110 116 114 111 108 10 66 117 115 32 67 114 101 97 116 111 114 47 66 117 115 32 67 114 101 97 116 111 114]))">whdlOFDMTx/Frame Generator/Header/Create Control Bus/Sample Control
+Bus Creator/Bus Creator</a>
+</TD>
+<TD>Message</TD>
+<TD>The non-virtual bus setting is ignored for HDL code generation. The bus will be implemented as a set of independent elements.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="dsp:hdl:Upsample:validateBlock:icnotused" href="matlab:hilite(get_param(char([119 104 100 108 79 70 68 77 84 114 97 110 115 109 105 116 116 101 114 95 117 112 95 99 111 110]),'object'),'none');hilite_system(char([119 104 100 108 79 70 68 77 84 120 47 70 114 97 109 101 32 71 101 110 101 114 97 116 111 114 47 80 105 108 111 116 47 85 112 115 97 109 112 108 101]))">whdlOFDMTx/Frame Generator/Pilot/Upsample</a>
+</TD>
+<TD>Message</TD>
+<TD>The initial condition is not used when the model is in single-tasking mode. Multi-tasking mode is not supported for HDL.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="dsp:hdl:Upsample:validateBlock:icnotused" href="matlab:hilite(get_param(char([119 104 100 108 79 70 68 77 84 114 97 110 115 109 105 116 116 101 114 95 117 112 95 99 111 110]),'object'),'none');hilite_system(char([119 104 100 108 79 70 68 77 84 120 47 70 114 97 109 101 32 71 101 110 101 114 97 116 111 114 47 80 105 108 111 116 47 85 112 115 97 109 112 108 101 49]))">whdlOFDMTx/Frame Generator/Pilot/Upsample1</a>
+</TD>
+<TD>Message</TD>
+<TD>The initial condition is not used when the model is in single-tasking mode. Multi-tasking mode is not supported for HDL.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="dsp:hdl:Upsample:validateBlock:icnotused" href="matlab:hilite(get_param(char([119 104 100 108 79 70 68 77 84 114 97 110 115 109 105 116 116 101 114 95 117 112 95 99 111 110]),'object'),'none');hilite_system(char([119 104 100 108 79 70 68 77 84 120 47 70 114 97 109 101 32 71 101 110 101 114 97 116 111 114 47 82 101 102 101 114 101 110 99 101 32 83 105 103 110 97 108 115 47 85 112 115 97 109 112 108 101]))">whdlOFDMTx/Frame Generator/Reference Signals/Upsample</a>
+</TD>
+<TD>Message</TD>
+<TD>The initial condition is not used when the model is in single-tasking mode. Multi-tasking mode is not supported for HDL.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="dsp:hdl:Upsample:validateBlock:icnotused" href="matlab:hilite(get_param(char([119 104 100 108 79 70 68 77 84 114 97 110 115 109 105 116 116 101 114 95 117 112 95 99 111 110]),'object'),'none');hilite_system(char([119 104 100 108 79 70 68 77 84 120 47 70 114 97 109 101 32 71 101 110 101 114 97 116 111 114 47 82 101 102 101 114 101 110 99 101 32 83 105 103 110 97 108 115 47 85 112 115 97 109 112 108 101 49]))">whdlOFDMTx/Frame Generator/Reference Signals/Upsample1</a>
+</TD>
+<TD>Message</TD>
+<TD>The initial condition is not used when the model is in single-tasking mode. Multi-tasking mode is not supported for HDL.</TD>
+</TR>
+<TR bgcolor="#FFFFFF"><TD>
+<a alt="dsp:hdl:Upsample:validateBlock:icnotused" href="matlab:hilite(get_param(char([119 104 100 108 79 70 68 77 84 114 97 110 115 109 105 116 116 101 114 95 117 112 95 99 111 110]),'object'),'none');hilite_system(char([119 104 100 108 79 70 68 77 84 120 47 70 114 97 109 101 32 71 101 110 101 114 97 116 111 114 47 83 121 110 99 104 114 111 110 105 122 97 116 105 111 110 32 83 101 113 117 101 110 99 101 47 85 112 115 97 109 112 108 101]))">whdlOFDMTx/Frame Generator/Synchronization Sequence/Upsample</a>
+</TD>
+<TD>Message</TD>
+<TD>The initial condition is not used when the model is in single-tasking mode. Multi-tasking mode is not supported for HDL.</TD>
+</TR>
+<TR bgcolor="#F0F0F0"><TD>
+<a alt="dsp:hdl:Upsample:validateBlock:icnotused" href="matlab:hilite(get_param(char([119 104 100 108 79 70 68 77 84 114 97 110 115 109 105 116 116 101 114 95 117 112 95 99 111 110]),'object'),'none');hilite_system(char([119 104 100 108 79 70 68 77 84 120 47 70 114 97 109 101 32 71 101 110 101 114 97 116 111 114 47 83 121 110 99 104 114 111 110 105 122 97 116 105 111 110 32 83 101 113 117 101 110 99 101 47 85 112 115 97 109 112 108 101 49]))">whdlOFDMTx/Frame Generator/Synchronization Sequence/Upsample1</a>
+</TD>
+<TD>Message</TD>
+<TD>The initial condition is not used when the model is in single-tasking mode. Multi-tasking mode is not supported for HDL.</TD>
+</TR>
+</TABLE>
+<BR><BR> </div></div></div></div>
+                    <div class="grid_192">
+                        <div class="footer_container">
+                            <div class="footer">
+                                <ul class="footernav">
+                                    <li class="footernav_trademarks"><a href="C:/Program Files/MATLAB/R2022b/help/acknowledgments.html">Acknowledgments</a></li>
+                                    <li class="footernav_trademarks"><a href="C:/Program%20Files/MATLAB/R2022b/trademarks.txt">Trademarks</a></li>
+                                    <li class="footernav_patents"><a href="C:/Program%20Files/MATLAB/R2022b/patents.txt">Patents</a></li>
+                                    <li class="footernav_help"><a href="C:/Program Files/MATLAB/R2022b/license_agreement.txt">Terms of Use</a></li>
+                                </ul>
+                                <div class="copyright">&copy; 1994-2023 The MathWorks, Inc.</div>
+                            </div>
+                        </div>
+                    </div>
+
+        <script type="text/javascript">
+
+$(document).ready( setTimeout( function () {
+                   $(".expandAllLink").trigger('click');
+            }, 50 ) );
+
+        </script>
+        
+</body>
+</html>
